@@ -1,0 +1,126 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: #d3d3d3;
+    color: whitesmoke;
+    font-family: "Droid Sans Mono", monospace;
+    /*line-height: 1.6; !* Just copied value *! */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    height: 75vh;
+    position: relative;
+}
+
+#frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    border-top: 2px whitesmoke solid;
+    border-left: 2px whitesmoke solid;
+    border-bottom: 2px black solid;
+    border-right: 2px black solid;
+    padding-bottom: 30px;
+    background: dimgrey;
+    border-radius: 10px;
+    box-shadow: 5px 10px 12px #756f6f;
+}
+
+/* B U T T O N S ---------------------------------*/
+
+button {
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Malgun Gothic", monospace;
+    font-size: 30px;
+    border: none;
+    font-weight: 600;
+    background: whitesmoke;
+    border-left: 1px whitesmoke solid;
+    border-top: 1px whitesmoke solid;
+    transition: all .07s ease-in-out;
+
+}
+
+.func-button {
+    font-size: 15px;
+    background: #dcabab;
+    font-stretch: expanded;
+    width: 187px;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    width: 400px;
+}
+
+.clicked {
+    border-left: 2px black solid;
+    border-top: 2px black solid;
+    background: #dcdbdb;
+}
+
+.func-button-clicked {
+    border-left: 2px black solid;
+    border-top: 2px black solid;
+    background: #c09494;
+}
+
+/* D I S P L A Y ------------------------*/
+#display {
+    width: 380px;
+    height: 120px;
+    border-right: 2px whitesmoke solid;
+    border-bottom: 2px whitesmoke solid;
+    border-top: 2px solid #413a3a;
+    border-left: 2px solid #413a3a;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background: #c1d9a0;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    /*border: 1px solid red;*/
+    height: 62px;
+    margin: 0 3px;
+    text-align: right;
+    font-size: 50px;
+    color: #483b3b;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-family: "Yu Gothic Light", monospace;
+    color: white;
+    background: #3a3838;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
